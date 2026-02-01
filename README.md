@@ -1,26 +1,48 @@
 # AI TradingVision GPX
 
-**Professional MT5 Expert Advisor for GBPUSD — Multi-Timeframe Trend Strategy with Strict Risk Control**
+**Professional MT5 Expert Advisor for GBPUSD & Gold (XAUUSD) Multi-Timeframe Trend Strategy with Strict Risk Control**
 
 ---
 
 ## Overview
 
-AI TradingVision GPX is a MetaTrader 5 Expert Advisor designed for **GBPUSD** on the **M1** timeframe. It uses a multi-timeframe trend approach (M1 + M5 + H4) with moving averages, session filters, and strong risk management to target consistent growth with controlled drawdown.
+AI TradingVision GPX is a MetaTrader 5 Expert Advisor designed for **GBPUSD** and **Gold (XAUUSD)** on the **M1** timeframe. It uses a multi-timeframe trend approach (M1 + M5 + H4) with moving averages, session filters, and strong risk management to target consistent growth with controlled drawdown. The EA works best on both Forex (GBPUSD) and Gold (XAUUSD).
+
+---
+
+## Backtest Results
+
+**Gold (XAUUSD) — $100 Initial Deposit | 2025.01.01 – 2026.01.19**
+
+<p align="center">
+  <img src="backtest-graph.png"
+</p>
+
+<p align="center">
+  <img src="backtest-report.png"
+</p>
 
 ---
 
 ## Performance Highlights
 
-| Metric | Typical Result |
-|--------|----------------|
-| **Test Period** | 2020.01.02 – 2020.12.11 (~11 months) |
-| **Symbol / Timeframe** | GBPUSD, M1 |
-| **Total Net Profit** | ~2,900+ |
-| **Balance Drawdown** | ~4.3% |
-| **Profit Factor** | ~3.67 |
-| **Total Trades** | ~114 |
-| **Expected Payoff** | ~25 per trade |
+**Gold (XAUUSD) — $100 Initial Deposit**
+
+| Metric | Result |
+|--------|--------|
+| **Test Period** | 2025.01.01 – 2026.01.19 (~13 months) |
+| **Symbol / Timeframe** | XAUUSD (Gold), M1 |
+| **Initial Deposit** | $100 |
+| **Total Net Profit** | $25,047.77 |
+| **Balance Drawdown Maximal** | $152.71 (0.81%) |
+| **Equity Drawdown Maximal** | $193.79 (1.03%) |
+| **Profit Factor** | 9.24 |
+| **Recovery Factor** | 129.25 |
+| **Total Trades** | 524 |
+| **Win Rate** | 66.22% |
+| **Expected Payoff** | $47.80 per trade |
+| **Average Profit Trade** | $80.95 |
+| **Average Loss Trade** | -$9.49 |
 
 *Results from backtest (Every tick model); live/demo results may vary by broker, spread, and market conditions.*
 
@@ -42,7 +64,7 @@ AI TradingVision GPX is a MetaTrader 5 Expert Advisor designed for **GBPUSD** on
 ## Requirements
 
 - **Platform:** MetaTrader 5 (MT5 only)  
-- **Symbol:** GBPUSD (optimised)  
+- **Symbol:** GBPUSD or XAUUSD (Gold) — both optimised  
 - **Timeframe:** M1  
 - **Model:** Every tick (for backtesting)  
 - **Deposit:** 3000+ (1:100) recommended for full lot; EA auto-reduces lots on smaller accounts  
@@ -53,27 +75,13 @@ AI TradingVision GPX is a MetaTrader 5 Expert Advisor designed for **GBPUSD** on
 
 1. Copy **AI_TradingVision_GPX_Clone.ex5** to `MQL5/Experts/`
 2. Restart MT5 or refresh Navigator
-3. Attach to a **GBPUSD M1** chart
+3. Attach to a **GBPUSD** or **XAUUSD (Gold)** M1 chart
 4. Enable **AutoTrading** (green button in toolbar)
 
-For detailed setup, parameters, and backtest tips, see **[Usage_Guide.md](Usage_Guide.md)**.
-
----
-
-## Project Structure
-
-```
-├── Experts/
-│   └── AI_TradingVision_GPX_Clone.mq5   # EA source
-├── Usage_Guide.md                        # Full parameter & usage guide
-└── README.md
-```
-
----
 
 ## Disclaimer
 
-Trading forex involves risk. Past backtest performance does not guarantee future results. Use on demo first and only risk capital you can afford to lose.
+Trading forex and commodities involves risk. Past backtest performance does not guarantee future results. Use on demo first and only risk capital you can afford to lose.
 
 ---
 
